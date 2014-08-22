@@ -1,6 +1,6 @@
 {
   "name": "id-type",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Type checking and assertion functions for all types but NaN.",
   "main": "index.js",
   "author": "Tom Wieland <tom.wieland@gmail.com>",
