@@ -19,6 +19,14 @@ curry = (fn) ->
 	->
 		fn.apply @, args.concat arraySlice.call arguments, 0
 
+fail = (actual, expected, message, operator, stackStartFunction) ->
+	throw new assert.AssertionError
+		message: message
+		actual: actual
+		expected: expected
+		operator: operator
+		stackStartFunction: stackStartFunction
+
 type = (a) ->
 	objectToString.call a
 	.slice 8, -1
@@ -28,17 +36,9 @@ type.of = type
 type.is = (t, a) ->
 	t is type a
 
-type.fail = (actual, expected, message, operator, stackStartFunction) ->
-	throw new assert.AssertionError
-		message: message
-		actual: actual
-		expected: expected
-		operator: operator
-		stackStartFunction: stackStartFunction
-
 type.assert = (t, a) ->
 	unless type.is t, a
-		type.fail (type a), t, null, "passed but expected", type.assert
+		fail (type a), t, null, "passed but expected", type.assert
 
 TYPES.map (t) ->
 	type["is#{t}"] = curry type.is, t
