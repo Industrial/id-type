@@ -1,0 +1,11 @@
+(require 'id-project')
+	browserify:    true
+	clean:         true
+	coffee:        true
+	copy:          true
+	documentation: true
+	less:          true
+	livereload:    true
+	nodemon:       true
+	tests:         true
+	watch:         true

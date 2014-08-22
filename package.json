@@ -1,0 +1,19 @@
+{
+  "name": "id-type",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coffee-script": "^1.7.1",
+    "gulp": "^3.8.7",
+    "id-project": "^2.0.2"
+  },
+  "dependencies": {
+    "id-debug": "^1.2.0"
+  }
+}
