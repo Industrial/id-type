@@ -1,12 +1,9 @@
 {
   "name": "id-type",
   "version": "0.0.0",
-  "description": "",
+  "description": "Type checking and assertion functions for all types but NaN.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "Tom Wieland <tom.wieland@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "coffee-script": "^1.7.1",
@@ -14,6 +11,5 @@
     "id-project": "^2.0.2"
   },
   "dependencies": {
-    "id-debug": "^1.2.0"
   }
 }
