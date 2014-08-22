@@ -98,8 +98,4 @@ type.assertUndefined = function(a) {
   }
 };
 
-type.fn = {};
-
-type.fn;
-
 module.exports = type;
